@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Form Validation</title>
+    <link rel="stylesheet" href="indexF.css">
+</head>
+
+<body>
+    <!-- There are two type of validation. (1) server side validation (2)client side validation.-->
+
+    <div class="mainContainer">
+
+        <h1>Signup Form</h1>
+        <form action="/myaction.php" name="myForm" , onsubmit="return validateForm()" method="post">
+            <div class="formdesign" id="name">
+                <label for="name">Name : </label>
+                <input type="text" id="name" name="fname" placeholder="Enter your name " required> <b><span
+                        class="formerror"></span></b>
+                <br><br>
+            </div>
+            <div class="formdesign" id="email">
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="femail" placeholder="Enter your email" required> <b><span
+                        class="formerror"></span></b>
+                <br><br>
+            </div>
+            <div class="formdesign" id="phone">
+                <label for="phone">Mobile No. </label>
+                <input type="phone" id="phone" name="fphone" placeholder="Enter your mobile number" required> <b><span
+                        class="formerror"></span></b>
+                <br><br>
+            </div>
+            <div class="formdesign" id="pass">
+                <label for="pass">Password : </label>
+                <input type="password" id="pass" name="fpass"
+                    placeholder="password and confirm password should be same." required> <b><span
+                        class="formerror"></span></b>
+                <br><br>
+            </div>
+            <div class="formdesign" id="cpass">
+                <label for="cpass"> Conform Password : </label>
+                <input type="password" id="cpass" name="fcpass" required
+                    placeholder="password and confirm password should be same."> <b><span class="formerror"></span></b>
+                <br><br>
+            </div>
+            <input type="submit" class="but">
+        </form>
+        <script src="indexF.js"></script>
+    </div>
+
+
+</body>
+
+</html>
